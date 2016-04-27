@@ -1,35 +1,64 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package recasdb;
+
 
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
+import javafx.scene.control.Button;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
-/**
- *
- * @author erni
- */
-public class FXMLDocumentController implements Initializable {
+public class FXMLDController implements Initializable {
+
+    @FXML //textfield de adicion
+    private TextField Aapelli;
+    private TextField Aapell2;
+    private TextField Aedad;
+    private TextField Anom;
+   
+    @FXML//TEXTfield de busqueda
+    private TextField Abusc;
     
-    @FXML
-    private Label label;
+    @FXML//Botones
+    private Button ADD;
+    private Button BuscT;
+    private Button Busc;
     
+    @FXML//Botonesradio
+    private RadioButton one;
+    private RadioButton all;
+    
+    @FXML //Tabla loca
+    private TableView<?> Tabla;
+    private TableColumn<?, ?> Tapell;
+    private TableColumn<?, ?> Tapelli2;
+    private TableColumn<?, ?> Tedad;
+    private TableColumn<?, ?> Tidprop;
+    private TableColumn<?, ?> Tnom;
+
     @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+    void Add(ActionEvent event) {
+
     }
-    
+
+    @FXML
+    void Busca(ActionEvent event) {
+
+    }
+
+    @FXML
+    void BuscaT(ActionEvent event) {
+
+    }
+
     @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
-    
+    public void initialize(URL location, ResourceBundle resources) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }
